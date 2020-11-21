@@ -11,3 +11,4 @@ pytzdata==2020.1
 six==1.15.0
 tbm-utils==2.6.0
 wrapt==1.12.1
+bs4

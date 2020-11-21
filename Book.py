@@ -1,14 +1,14 @@
 class Chapter:
-    def __init__(self, Title: str, Duration: int, Start: int):
+    def __init__(self, Title: str, Start: int,Stop: int):
         self.Title: str = Title
-        self.Duration: int = Duration
+        self.Stop: int = Stop
         self.Start: int = Start
 
     def setStart(self, Start: int):
         self.Start = Start
 
-    def setDuration(self, Duration: int):
-        self.Duration = Duration
+    def setStop(self, Stop: int):
+        self.Stop = Stop
 
 
 class Book:
@@ -16,13 +16,6 @@ class Book:
         self.Title: str = Title
         self.Author: str = Author
         self.Chapters: [Chapter] = Chapters
-        self.Duration = 0;
-        self.calcDuartion()
 
     def setChapters(self, Chapters: [Chapter]):
         self.Chapters = Chapters
-
-    def calcDuartion(self):
-        self.Duration = 0
-        for chapter in self.Chapters:
-            self.Duration += chapter.Duration

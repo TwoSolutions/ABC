@@ -1,12 +1,15 @@
 # ABC - Audio Book Cutter
 
 This Project is for extracting Chapters from a single file audio book.
-You have to extract the chapter duration somehow, for example parsing the WebPage of the Audio Book in Google Play Books.
+This Parses the Chapter Length and Name directly from Googles Audiobook Page, you only have to get the ID of the Audiobook.
+For example https://play.google.com/store/audiobooks/details?id=AQAAAEAc7BasGM has id AQAAAEAc7BasGM.
+ 
+#Usage
+Clone this repository with 
 
-# TODO
-
-- Adding WebSite-Parser to extract the chapter timings from Google Play Books.
-
-# Run Program
-This program is written purely in python 3!
-The PIP Libraries are not necessary, so you don't have to download them yet.
+```
+git clone https://github.com/TwoSolutions/ABC
+cd ABC
+pip install -r requirements.txt
+```
+Now open main.py and change the ID to whatever your ID is.Run main.py
