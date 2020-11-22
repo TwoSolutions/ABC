@@ -2,7 +2,7 @@ import ntpath
 
 from audioclipextractor.core import AudioClipExtractor
 from tinytag import TinyTag
-
+import os
 import Book
 from Book import Chapter
 
@@ -23,8 +23,8 @@ class Splitter:
             f.write(str(chapter.Start / 1000) + "  " + str(chapter.Stop / 1000) + "  " + chapter.Title + "\n")
         f.close()
         a = AudioClipExtractor(self.file)
-
-        a.extract_clips(filename + ".txt", "/out")
+        os.system("mkdir out")
+        a.extract_clips(filename + ".txt", "out/")
 
     def fix_chapters(self):
         tag = TinyTag.get(self.file)
