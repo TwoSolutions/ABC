@@ -1,3 +1,5 @@
+
+
 class Chapter:
     def __init__(self, Title: str, Start: int,Stop: int):
         self.Title: str = Title
@@ -19,3 +21,5 @@ class Book:
 
     def setChapters(self, Chapters: [Chapter]):
         self.Chapters = Chapters
+    def getChapters(self):
+        return self.Chapters
