@@ -12,4 +12,4 @@ git clone https://github.com/TwoSolutions/ABC
 cd ABC
 pip install -r requirements.txt
 ```
-Now open main.py and change the ID to whatever your ID , Name , Author and File_Path.Then run main.py
+Now open main.py and change your ID , Name , Author and File_Path.Then run main.py
