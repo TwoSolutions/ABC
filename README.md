@@ -15,3 +15,4 @@ cd ABC
 pip install -r requirements.txt
 ```
 Now open main.py and change your ID , Name , Author and File_Path.Then run main.py
+Note that the Name and Author variable in main.py can be set to everything, because currently the metadata for the chapter audio files is fetch from the input audio file, so they can be safely set to None.
