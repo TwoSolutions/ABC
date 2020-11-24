@@ -5,6 +5,8 @@ This Parses the Chapter Length and Name directly from Googles Audiobook Page, yo
 For example https://play.google.com/store/audiobooks/details?id=AQAAAEAc7BasGM has id AQAAAEAc7BasGM.
  
 # Usage
+Download FFmpeg from https://ffmpeg.org/.
+
 Clone this repository with 
 
 ```
