@@ -14,7 +14,8 @@ class Chapter:
 
 
 class Book:
-    def __init__(self, Title: str, Author: str, Chapters: [Chapter]):
+    def __init__(self, Title: str, Author: str, Chapters: [Chapter],file:str):
+        self.File : str = file
         self.Title: str = Title
         self.Author: str = Author
         self.Chapters: [Chapter] = Chapters
